@@ -23,6 +23,6 @@ jobs:
       - name: Build
         run: docker build -t App .
       - name: Run image
-        run: docker run --network App --name semcontainer App
+        run: docker run --network App --name semcontainer app
       - name: view logs
         run: docker logs semcontainer
