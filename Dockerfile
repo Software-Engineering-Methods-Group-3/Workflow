@@ -1,4 +1,4 @@
 FROM openjdk:latest
-COPY ./target/classes/App /tmp/App
+COPY ./target/App-0.1.0.1-jar-with-dependencies.jar /tmp
 WORKDIR /tmp
-ENTRYPOINT ["java", "App.World"]
+ENTRYPOINT ["java", "-jar", "App-0.1.0.1-jar-with-dependencies.jar"]
